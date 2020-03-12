@@ -28,7 +28,7 @@ lang: en-us # used in HTML lang attributes
 # on landing page
 # - set the greeting only if you want to display the first green section
 greeting:
-  title: Garvey'
+  title: Garvey
   text: 
 # - displayed at the bottom
 closing-head: 欲戴王冠 必承其重
