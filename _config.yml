@@ -12,7 +12,7 @@
 
 # Site settings
 title: Garvey's blog
-description: Garvey
+description: 欲戴王冠 必承其重
 owner:
   name: Garvey
   url: "http://GGGGarvey.github.io.com" # your URL
@@ -28,8 +28,8 @@ lang: en-us # used in HTML lang attributes
 # on landing page
 # - set the greeting only if you want to display the first green section
 greeting:
-  title: 欲戴王冠 必承其重
-  text: _Your detailed greeting text_
+  title: Garvey'
+  text: 
 # - displayed at the bottom
 closing-head: 欲戴王冠 必承其重
 closing-para: 
