@@ -7,6 +7,29 @@ excerpt: 这是大佬们的友链
 background-image: banner.jpg
 ---
 
+<div class="table-wrapper">
+  <table>
+    <tbody>{%
+      include fn_groupsort_reverse.html unsorted=site.categories.works groupby='priority' sortby='date'
+%}{%  for work in sorted_list %}
+      <tr>
+        <td><b><a href="{{ work.url | prepend: site.baseurl }}">{{ work.title }}</a></b></td>
+        <td>{{ work.date | date: "%b %Y" }}</td>
+        <td>{{ work.excerpt | strip_html | truncatewords: 12 }}</td>
+        <td>
+          {% include techlist.html %}
+        </td>
+      </tr>{%
+      endfor %}
+    </tbody>
+  </table>
+</div>{%
+  if site.works_in_progress %}
+  <div class="works_inprogress">In-progress, more to come.</div>{%
+  endif %}{%
+endif
+%}
+
 	<h3>Friends</h3>
 	<hr />
 	<a href="https://zarathu.cc/" target="_blank">尹协童老师</a>
