@@ -15,8 +15,9 @@
       endif %}{%
     endif %}{%
   endfor %}
-    <li>&copy; {%
-    assign thisyear = site.time | date: "%Y" %}{%
+    </ul>
+    <ul class="copyright">
+    {% assign thisyear = site.time | date: "%Y" %}{%
     if site.first_published %}{%
       capture diff %}{{ site.first_published | minus:thisyear }}{%
       endcapture %}{%
